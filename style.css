@@ -1,0 +1,147 @@
+body {
+  font-size: 25px;
+  font-family: "BenchNine", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  color: #3a3737;
+
+  width: 1300px;
+  margin: auto;
+  background-image: url("imagenes/fondo1_page-0001.jpg"); /* Ruta de la imagen de fondo */
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-position: center;
+}
+
+.contenedorbase {
+  width: 100%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  border: solid black 3px;
+  border-radius: 30px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 1.9); /* Sombra de fondo */
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+}
+
+.menu1 {
+  margin-bottom: 20px;
+}
+
+.menu1 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+}
+
+.menu1 a {
+  margin-right: 80px;
+  text-decoration: none;
+  color: #3a3737;
+  border: solid black 2px;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5); /* Sombra interna para dar profundidad */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra de fondo */
+}
+.menu1 li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* Efecto de hover */
+.menu1 li a:hover {
+  transform: scale(1.1); /* Agrandar el enlace */
+}
+
+/* Parte de menu de imagenes-------------------------------------- */
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel img {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+.carousel {
+  display: flex; /* Utilizar flexbox para centrar las imágenes */
+  justify-content: center; /* Centrar las imágenes horizontalmente */
+  align-items: center; /* Centrar las imágenes verticalmente */
+}
+
+/* ------------------------------------------------------------ */
+
+.contenedor2 {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+}
+.contenido2 a {
+  text-decoration: none;
+  color: #3a3737;
+}
+
+.contenido2 img {
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
