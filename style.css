@@ -1,6 +1,6 @@
 body {
-  font-size: 25px;
-  font-family: "BenchNine", sans-serif;
+  font-size: 20px;
+  font-family: "anime", "BenchNine", sans-serif;
   font-weight: 350;
   font-style: normal;
   color: #3a3737;
@@ -10,6 +10,14 @@ body {
   background-image: url("imagenes/fondo1_page-0001.jpg"); /* Ruta de la imagen de fondo */
   background-attachment: fixed; /* Fija la imagen de fondo */
   background-position: center;
+}
+@font-face {
+  font-family: anime;
+  src: url("Fuentes/animeace2_bld.otf") format("opentype");
+}
+@font-face {
+  font-family: titulo;
+  src: url("Fuentes/bloodcrow.ttf") format("truetype");
 }
 
 .contenedorbase {
@@ -26,6 +34,10 @@ body {
 h1 {
   display: flex;
   justify-content: center;
+  font-family: "titulo";
+  font-size: 100px;
+  color: rgb(51, 46, 46);
+
   align-items: center;
   margin-top: 50px;
   margin-bottom: 80px;
@@ -41,6 +53,7 @@ h1 {
 
 .menu1 {
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .menu1 ul {
@@ -91,6 +104,7 @@ h1 {
   height: 400px;
   object-fit: cover;
   border-radius: 20px;
+  border: solid black 4px;
 }
 
 .dots-container {
@@ -125,6 +139,7 @@ h1 {
   margin-top: 70px;
   display: flex;
   justify-content: center;
+  font-size: 15px;
 }
 
 .contenido2 {
@@ -144,4 +159,59 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+.iluminar img {
+  transition: filter 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor */
+.iluminar:hover img {
+  filter: brightness(120%); /* Aumenta el brillo al 120% */
+}
+
+/* footer */
+.contenedor3 {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.contenido3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+  padding: 50px;
+  background-color: rgb(53, 51, 51);
+  border-radius: 40px;
+}
+.contenido3 a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.contenido3 ul {
+  list-style: none;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+p {
+  color: whitesmoke;
+}
+
+.iconos {
+  font-size: 30px;
+}
+.iconos i {
+  margin-right: 40px;
 }
